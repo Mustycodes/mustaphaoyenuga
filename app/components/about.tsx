@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <>
+    <section className="mb-12">
       <h2 className='uppercase mb-4 font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-primary-accent after:mt-1.5'>
         About Me
       </h2>
@@ -49,7 +49,7 @@ const About = () => {
         Spotify API.
       </p>
 
-      <p className='text-slate-300 leading-relaxed mb-12'>
+      <p className='text-slate-300 leading-relaxed'>
         In my spare time, I'm usually climbing, reading, hanging out with my
         wife and two cats, or running around Hyrule searching for{" "}
         <span className='text-white hover:text-primary-accent cursor-pointer font-medium'>
@@ -57,7 +57,7 @@ const About = () => {
         </span>
         .
       </p>
-    </>
+    </section>
   );
 };
 
