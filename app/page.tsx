@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className='min-h-screen bg-primary-bg text-white font-sans lg:flex lg:justify-between lg:gap-4'>
+    <div className='font-sans lg:flex lg:justify-between lg:gap-4'>
       {/* Cursor spotlight overlay */}
       <div
         className='fixed inset-0 pointer-events-none z-30 transition-opacity duration-300'

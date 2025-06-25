@@ -5,8 +5,9 @@ import { Github, Globe, Instagram, Linkedin, Twitter } from "lucide-react";
 const Sidebar = () => {
   return (
      <header
-        className={`lg:sticky lg:flex lg:top-0 lg:max-h-screen lg:flex-col lg:justify-between lg:w-[45%] lg:pt-24 lg:pb-12 lg:px-16 transition-all duration-300 `}
+        className={`lg:sticky lg:flex lg:top-0 lg:max-h-screen lg:flex-col lg:justify-between lg:w-[45%] lg:pt-24 lg:pb-12 lg:pl-16 transition-all duration-300 `}
       >
+        {/* lg:pt-24 lg:pb-12 lg:px-16 */}
         <div>
           <div className='relative mb-4 w-20 h-20 lg:w-40 lg:h-40'>
             <Image
@@ -23,9 +24,9 @@ const Sidebar = () => {
           </p>
 
           <nav className='space-y-4'>
-            <NavItem name='About' />
-            <NavItem name='Musings' />
-            <NavItem name='Projects' />
+            <NavItem name='About' href="/about" />
+            <NavItem name='Musings' href="/musings"   />
+            <NavItem name='Projects' href="/projects" />
           </nav>
         </div>
 
@@ -43,16 +44,17 @@ const Sidebar = () => {
 
 interface NavItemProps {
   name: string;
+  href: string;
 }
-const NavItem = ({ name }: NavItemProps) => (
-  <div className='group cursor-pointer'>
+const NavItem = ({ name, href }: NavItemProps) => (
+  <Link href={href} className='group cursor-pointer block'>
     <div className='flex items-center space-x-4'>
       <div className='w-8 h-px bg-slate-600 group-hover:bg-white group-hover:w-16 transition-all duration-150' />
       <span className='text-xs uppercase font-bold tracking-widest text-slate-500 group-hover:text-white transition-colors duration-300'>
         {name}
       </span>
     </div>
-  </div>
+  </Link>
 );
 
 export default Sidebar
