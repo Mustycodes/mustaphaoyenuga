@@ -1,10 +1,10 @@
 const Experience = () => {
   return (
-    <section className="mb-12">
-      <h2 className='uppercase mb-4 font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-primary-accent after:mt-1.5'>
+    <section className='mb-12'>
+      <h2 className='uppercase mb-4 font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-accent after:mt-1.5'>
         Experience
       </h2>
-      <div className="border border-zinc-700/40 rounded-2xl p-5">
+      <div className='border border-zinc-700/40 rounded-2xl p-5'>
         <ol className='space-y-4'>
           <li className='flex gap-4'>
             <dl className='flex flex-auto flex-wrap gap-x-2'>
@@ -64,7 +64,10 @@ const Experience = () => {
             </dl>
           </li>
         </ol>
-        <a href="" className="inline-flex items-center justify-center gap-2 py-2 px-3 text-sm font-medium text-primary-text/90 transition rounded-md bg-secondary-bg group mt-6 w-full">
+        <a
+          href=''
+          className='inline-flex items-center justify-center gap-2 py-2 px-3 text-sm font-medium text-light/90 transition rounded-md bg-primary-darker group mt-6 w-full'
+        >
           Download my CV
           <svg
             viewBox='0 0 16 16'

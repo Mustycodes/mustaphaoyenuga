@@ -6,7 +6,7 @@ const AboutPage = () => {
     <section className='font-sans px-6 py-12'>
       <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-12'>
         <div className='lg:pl-20'>
-          <div className="max-w-xs px-2.5 lg:max-w-sm">
+          <div className='max-w-xs px-2.5 lg:max-w-sm'>
             <Image
               src='/images/portrait.png'
               className='aspect-square rounded-2xl rotate-3 object-cover'
@@ -51,7 +51,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className='lg:pl-20'>
-          <ul role='list' className="text-sm text-zinc-300">
+          <ul role='list' className='text-sm text-zinc-300'>
             <li>
               <a href='#' className='group flex items-center font-medium'>
                 <svg
@@ -61,51 +61,51 @@ const AboutPage = () => {
                 >
                   <path d='M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z'></path>
                 </svg>
-                <span className='ml-4 group-hover:text-primary-accent'>
+                <span className='ml-4 group-hover:text-accent'>
                   Follow on X
                 </span>
               </a>
             </li>
-            <li className="mt-4">
+            <li className='mt-4'>
               <a href='#' className='group flex items-center font-medium'>
                 <Instagram
                   size={24}
-                  className='text-zinc-500 group-hover:text-primary-accent'
+                  className='text-zinc-500 group-hover:text-accent'
                 />
-                <span className='ml-4 group-hover:text-primary-accent'>
+                <span className='ml-4 group-hover:text-accent'>
                   Follow on Instagram
                 </span>
               </a>
             </li>
-            <li className="mt-4">
+            <li className='mt-4'>
               <a href='#' className='group flex items-center font-medium'>
                 <Github
                   size={24}
-                  className='text-zinc-500 group-hover:text-primary-accent'
+                  className='text-zinc-500 group-hover:text-accent'
                 />
-                <span className='ml-4 group-hover:text-primary-accent'>
+                <span className='ml-4 group-hover:text-accent'>
                   Follow on Github
                 </span>
               </a>
             </li>
-            <li className="mt-4">
+            <li className='mt-4'>
               <a href='#' className='group flex items-center font-medium'>
                 <Linkedin
                   size={24}
-                  className='text-zinc-500 group-hover:text-primary-accent'
+                  className='text-zinc-500 group-hover:text-accent'
                 />
-                <span className='ml-4 group-hover:text-primary-accent'>
+                <span className='ml-4 group-hover:text-accent'>
                   Follow on LinkedIn
                 </span>
               </a>
             </li>
-            <li className="mt-8 pt-8 border-t border-zinc-700/60">
+            <li className='mt-8 pt-8 border-t border-zinc-700/60'>
               <a href='#' className='group flex items-center font-medium'>
                 <Mail
                   size={24}
-                  className='text-zinc-500 group-hover:text-primary-accent'
+                  className='text-zinc-500 group-hover:text-accent'
                 />
-                <span className='ml-4 group-hover:text-primary-accent'>
+                <span className='ml-4 group-hover:text-accent'>
                   mustaphaoyenuga@gmail.com
                 </span>
               </a>

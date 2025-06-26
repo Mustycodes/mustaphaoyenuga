@@ -4,7 +4,7 @@ import Image from "next/image";
 const ProjectCard = () => {
   return (
     <article className='p-4 flex items-start gap-x-4 hover:bg-[#1f1f1f] rounded-xl hover:shadow-md group'>
-      <figure className="flex-shrink-0">
+      <figure className='flex-shrink-0'>
         <Image
           src='/images/project_2.png'
           alt='Docura App Preview'
@@ -15,7 +15,7 @@ const ProjectCard = () => {
       </figure>
       <div className='flex-1'>
         <header>
-          <a href='#' className='group-hover:text-primary-accent font-medium'>
+          <a href='#' className='group-hover:text-accent font-medium'>
             Docura
           </a>
         </header>
@@ -27,13 +27,13 @@ const ProjectCard = () => {
         <footer className='text-sm mt-4 w-full inline-flex justify-between text-gray-400'>
           <a
             href='#'
-            className='font-semibold inline-flex items-center gap-x-2 group-hover:text-primary-accent'
+            className='font-semibold inline-flex items-center gap-x-2 group-hover:text-accent'
           >
             <Link size={12} /> github.com
           </a>
           <a
             href='#'
-            className='font-semibold inline-flex items-center gap-x-2 group-hover:text-primary-accent'
+            className='font-semibold inline-flex items-center gap-x-2 group-hover:text-accent'
           >
             <Link size={12} /> website.com
           </a>

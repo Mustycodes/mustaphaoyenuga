@@ -10,7 +10,7 @@ const ArticleCard = () => {
         >
           September 5, 2022
         </time>
-        <h2 className='text-lg font-semibold mt-2 group-hover:text-primary-accent'>
+        <h2 className='text-lg font-semibold mt-2 group-hover:text-accent'>
           Crafting a design system for a multiplanetary future
         </h2>
       </header>
@@ -23,7 +23,7 @@ const ArticleCard = () => {
       <footer>
         <a
           href='#'
-          className='text-sm inline-flex font-medium items-center gap-x-1 text-primary-accent'
+          className='text-sm inline-flex font-medium items-center gap-x-1 text-accent'
           aria-label='Read full article'
         >
           Read article <ChevronRight size='12' />{" "}

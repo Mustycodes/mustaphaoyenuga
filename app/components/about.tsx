@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <section className="mb-12">
-      <h2 className='uppercase mb-4 font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-primary-accent after:mt-1.5'>
+    <section className='mb-12'>
+      <h2 className='uppercase mb-4 font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-accent after:mt-1.5'>
         About Me
       </h2>
       <p className='text-slate-300 leading-relaxed mb-6'>
@@ -14,7 +14,7 @@ const About = () => {
 
       <p className='text-slate-300 leading-relaxed mb-6'>
         Currently, I'm a Senior Front-End Engineer at{" "}
-    <span className='text-white hover:text-primary-accent cursor-pointer font-medium'>
+        <span className='text-white hover:text-accent cursor-pointer font-medium'>
           Klaviyo
         </span>
         , specializing in accessibility. I contribute to the creation and
@@ -26,23 +26,23 @@ const About = () => {
       <p className='text-slate-300 leading-relaxed mb-6'>
         In the past, I've had the opportunity to develop software across a
         variety of settings — from{" "}
-        <span className='text-white hover:text-primary-accent cursor-pointer font-medium'>
+        <span className='text-white hover:text-accent cursor-pointer font-medium'>
           advertising agencies
         </span>{" "}
         and{" "}
-        <span className='text-white hover:text-primary-accent cursor-pointer font-medium'>
+        <span className='text-white hover:text-accent cursor-pointer font-medium'>
           large corporations
         </span>{" "}
         to{" "}
-        <span className='text-white hover:text-primary-accent cursor-pointer font-medium'>
+        <span className='text-white hover:text-accent cursor-pointer font-medium'>
           start-ups
         </span>{" "}
         and{" "}
-        <span className='text-white hover:text-primary-accent cursor-pointer font-medium'>
+        <span className='text-white hover:text-accent cursor-pointer font-medium'>
           small digital product studios
         </span>
         . Additionally, I also released a{" "}
-        <span className='text-white hover:text-primary-accent cursor-pointer font-medium'>
+        <span className='text-white hover:text-accent cursor-pointer font-medium'>
           comprehensive video course
         </span>{" "}
         a few years ago, guiding learners through building a web app with the
@@ -52,7 +52,7 @@ const About = () => {
       <p className='text-slate-300 leading-relaxed'>
         In my spare time, I'm usually climbing, reading, hanging out with my
         wife and two cats, or running around Hyrule searching for{" "}
-        <span className='text-white hover:text-primary-accent cursor-pointer font-medium'>
+        <span className='text-white hover:text-accent cursor-pointer font-medium'>
           Korok seeds
         </span>
         .
