@@ -8,35 +8,28 @@ const MusingsPage = () => {
           Writing on software design, company building, and the aerospace
           industry.
         </h1>
-        <p className='mt-6 '>
+        <p className='mt-6'>
           All of my long-form thoughts on programming, leadership, product
           design, and more, collected in chronological order.
         </p>
       </header>
       <div className='mt-16 sm:mt-20'>
         <div className='flex flex-col max-w-3xl'>
-          <div className='relative pl-6'>
-            <div className='absolute w-0.5 left-2 top-6 bottom-0 bg-zinc-500' />
-            <ArticleCard
-              title='Crafting a design system for a multiplanetary future'
-              href='#'
-              date='2025-05-30'
-              formattedDate='September 30, 2025'
-              description='Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.'
-              hideTimeInHeader
-            />
-          </div>
-          <div className='relative pl-6'>
-            <div className='absolute w-0.5 left-2 top-6 bottom-0 bg-zinc-500' />
-            <ArticleCard
-              title='Crafting a design system for a multiplanetary future'
-              href='#'
-              date='2025-05-30'
-              formattedDate='September 30, 2025'
-              description='Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.'
-              hideTimeInHeader
-            />
-          </div>
+          <ArticleCard
+            title='Crafting a design system for a multiplanetary future'
+            href='#'
+            date='2025-05-30'
+            formattedDate='September 30, 2025'
+            description='Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.'
+          />
+
+          <ArticleCard
+            title='Crafting a design system for a multiplanetary future'
+            href='#'
+            date='2025-05-30'
+            formattedDate='September 30, 2025'
+            description='Most companies try to stay ahead of the curve when it comes to visual design, but not us.'
+          />
         </div>
       </div>
     </section>
