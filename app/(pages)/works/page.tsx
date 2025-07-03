@@ -4,19 +4,20 @@ const WorksPage = () => {
   const projects = [
     {
       title: "Agency Landing Page",
-      url: "https://themesberg.com",
+      liveUrl: "https://themesberg.com",
+      githubUrl: "https://themesberg.com",
       description:
         "Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups.",
-      image: "/api/placeholder/400/200",
+      image: "/images/project1.PNG",
       technologies: ["WordPress", "HTML", "CSS", "JavaScript"],
-      isLarge: false,
     },
     {
       title: "Mail management system",
-      url: "https://ui.glass",
+      liveUrl: "https://ui.glass",
+      githubUrl: "https://themesberg.com",
       description:
         "Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups.",
-      image: "/api/placeholder/400/200",
+      image: "/images/project1.PNG",
       technologies: [
         "TypeScript",
         "Tailwind",
@@ -25,7 +26,7 @@ const WorksPage = () => {
         "HTML",
         "CSS",
       ],
-      isLarge: false,
+      isReverse: true,
     },
   ];
   return (
@@ -43,18 +44,21 @@ const WorksPage = () => {
         </p>
       </header>
       <div className='mt-16 sm:mt-20'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              url={project.url}
-              description={project.description}
-              image={project.image}
-              technologies={project.technologies}
-              isLarge={project.isLarge}
-            />
-          ))}
+        <div className='max-w-5xl mx-auto'>
+          <div className='grid grid-cols-1 gap-y-16'>
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                liveUrl={project.liveUrl}
+                githubUrl={project.githubUrl}
+                description={project.description}
+                image={project.image}
+                technologies={project.technologies}
+                isReverse={project.isReverse}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

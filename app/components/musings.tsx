@@ -1,4 +1,4 @@
-import ArticleCard from "./articleCard";
+import ArticleCard from "./cards/articleCard";
 
 const Musings = () => {
   return (

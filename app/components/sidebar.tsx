@@ -26,7 +26,7 @@ const Sidebar = () => {
         <nav className='space-y-4'>
           <NavItem name='About' href='/about' />
           <NavItem name='Musings' href='/musings' />
-          <NavItem name='Projects' href='/projects' />
+          <NavItem name='Works' href='/works' />
         </nav>
       </div>
 
