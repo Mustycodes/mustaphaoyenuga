@@ -1,10 +1,10 @@
 const Experience = () => {
   return (
     <section className='mb-12'>
-      <h2 className='uppercase mb-8 font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-accent after:mt-1.5'>
+      <h2 className='uppercase mb-8 text-white font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-accent after:mt-1.5'>
         Experience
       </h2>
-      <div className='border border-zinc-700/40 rounded-2xl p-5'>
+      <div className='border border-border/40 rounded-2xl p-5 bg-primary'>
         <ol className='space-y-4'>
           <li className='flex gap-4'>
             <dl className='flex flex-auto flex-wrap gap-x-2'>
@@ -13,10 +13,10 @@ const Experience = () => {
                 Cbit Industries (SpringRock Group)
               </dd>
               <dt className='sr-only'>Role</dt>
-              <dd className='text-xs text-slate-300 '>Front-End Developer</dd>
+              <dd className='text-xs text-muted '>Front-End Developer</dd>
               <dt className='sr-only'>Date</dt>
               <dd
-                className='ml-auto text-xs text-slate-500'
+                className='ml-auto text-xs text-muted'
                 aria-label='2021 until Present'
               >
                 <time dateTime='2019'>2021</time>{" "}
@@ -32,10 +32,10 @@ const Experience = () => {
                 Planetaria
               </dd>
               <dt className='sr-only'>Role</dt>
-              <dd className='text-xs text-slate-300 '>CEO</dd>
+              <dd className='text-xs text-muted'>CEO</dd>
               <dt className='sr-only'>Date</dt>
               <dd
-                className='ml-auto text-xs text-slate-500'
+                className='ml-auto text-xs text-muted'
                 aria-label='2019 until Present'
               >
                 <time dateTime='2019'>2019</time>{" "}
@@ -51,10 +51,10 @@ const Experience = () => {
                 Planetaria
               </dd>
               <dt className='sr-only'>Role</dt>
-              <dd className='text-xs text-slate-300 '>CEO</dd>
+              <dd className='text-xs text-muted'>CEO</dd>
               <dt className='sr-only'>Date</dt>
               <dd
-                className='ml-auto text-xs text-slate-500'
+                className='ml-auto text-xs text-muted'
                 aria-label='2019 until Present'
               >
                 <time dateTime='2019'>2019</time>{" "}
@@ -66,7 +66,7 @@ const Experience = () => {
         </ol>
         <a
           href=''
-          className='inline-flex items-center justify-center gap-2 py-2 px-3 text-sm font-medium text-light/90 transition rounded-md bg-primary-darker group mt-6 w-full'
+          className='inline-flex items-center justify-center gap-2 py-2 px-3 text-sm font-medium text-light/90 transition rounded-md bg-accent hover:bg-accent-alt group mt-6 w-full'
         >
           Download my CV
           <svg

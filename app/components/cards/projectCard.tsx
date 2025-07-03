@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               {title}
             </h3>
 
-            <p className='hidden md:block text-slate-300 text-sm leading-snug mb-6'>
+            <p className='hidden md:block text-muted text-sm leading-snug mb-6'>
               {description}
             </p>
 

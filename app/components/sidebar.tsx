@@ -17,9 +17,9 @@ const Sidebar = () => {
             fill
           />
         </div>
-        <h1 className='text-3xl font-bold mb-2'>Mustapha Oyenuga</h1>
-        <h2 className='text-lg text-slate-300 mb-6'>Front End Engineer</h2>
-        <p className='text-slate-400 mb-8 lg:max-w-xs leading-relaxed'>
+        <h1 className='text-3xl font-bold mb-2 text-slate-200'>Mustapha Oyenuga</h1>
+        <h2 className='text-lg text-slate-200 mb-6'>Front End Engineer</h2>
+        <p className='text-muted mb-8 lg:max-w-xs leading-relaxed'>
           I build accessible, pixel-perfect digital experiences for the web.
         </p>
 
@@ -50,7 +50,7 @@ const NavItem = ({ name, href }: NavItemProps) => (
   <Link href={href} className='group cursor-pointer block'>
     <div className='flex items-center space-x-4'>
       <div className='w-8 h-px bg-slate-600 group-hover:bg-white group-hover:w-16 transition-all duration-150' />
-      <span className='text-xs uppercase font-bold tracking-widest text-slate-500 group-hover:text-white transition-colors duration-300'>
+      <span className='text-xs uppercase font-bold tracking-widest text-muted group-hover:text-white transition-colors duration-300'>
         {name}
       </span>
     </div>

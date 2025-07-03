@@ -1,10 +1,10 @@
 const About = () => {
   return (
     <section className='mb-12'>
-      <h2 className='uppercase mb-8 font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-accent after:mt-1.5'>
+      <h2 className='uppercase mb-8 text-white font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-accent after:mt-1.5'>
         About Me
       </h2>
-      <p className='text-slate-300 leading-relaxed mb-6'>
+      <p className='text-muted leading-relaxed mb-6'>
         I'm a developer passionate about crafting accessible, pixel-perfect user
         interfaces that blend thoughtful design with robust engineering. My
         favorite work lies at the intersection of design and development,
@@ -12,7 +12,7 @@ const About = () => {
         for performance and usability.
       </p>
 
-      <p className='text-slate-300 leading-relaxed mb-6'>
+      <p className='text-muted leading-relaxed mb-6'>
         Currently, I'm a Senior Front-End Engineer at{" "}
         <span className='text-white hover:text-accent cursor-pointer font-medium'>
           Klaviyo
@@ -23,7 +23,7 @@ const About = () => {
         an inclusive user experience.
       </p>
 
-      <p className='text-slate-300 leading-relaxed mb-6'>
+      <p className='text-muted leading-relaxed mb-6'>
         In the past, I've had the opportunity to develop software across a
         variety of settings — from{" "}
         <span className='text-white hover:text-accent cursor-pointer font-medium'>
@@ -49,7 +49,7 @@ const About = () => {
         Spotify API.
       </p>
 
-      <p className='text-slate-300 leading-relaxed'>
+      <p className='text-muted leading-relaxed'>
         In my spare time, I'm usually climbing, reading, hanging out with my
         wife and two cats, or running around Hyrule searching for{" "}
         <span className='text-white hover:text-accent cursor-pointer font-medium'>
