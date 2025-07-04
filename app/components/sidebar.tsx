@@ -49,7 +49,7 @@ interface NavItemProps {
 const NavItem = ({ name, href }: NavItemProps) => (
   <Link href={href} className='group cursor-pointer block'>
     <div className='flex items-center space-x-4'>
-      <div className='w-8 h-px bg-slate-600 group-hover:bg-white group-hover:w-16 transition-all duration-150' />
+      <div className='w-8 h-px bg-muted group-hover:bg-white group-hover:w-16 transition-all duration-150' />
       <span className='text-xs uppercase font-bold tracking-widest text-muted group-hover:text-white transition-colors duration-300'>
         {name}
       </span>
