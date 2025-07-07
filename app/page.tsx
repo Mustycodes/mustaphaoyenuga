@@ -1,36 +1,103 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+
 import About from "./components/about";
 import Experience from "./components/experience";
 import Sidebar from "./components/sidebar";
 import Works from "./components/works";
 import Musings from "./components/musings";
 
-export default function Home() {
+
+function useSpotlightMouse(throttleMs = 16) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isClient, setIsClient] = useState(false);
+  const lastUpdateTime = useRef(0);
+  const animationFrameId = useRef<number | null>(null);
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    setIsClient(true);
   }, []);
+
+  const updateMousePosition = useCallback((e: MouseEvent) => {
+    const now = Date.now();
+    if (now - lastUpdateTime.current < throttleMs) return;
+    
+    lastUpdateTime.current = now;
+    
+    if (animationFrameId.current) {
+      cancelAnimationFrame(animationFrameId.current);
+    }
+    
+    animationFrameId.current = requestAnimationFrame(() => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    });
+  }, [throttleMs]);
+
+  useEffect(() => {
+    if (!isClient) return;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
+    const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
+    if (!isDesktop) return;
+
+    window.addEventListener("mousemove", updateMousePosition, { passive: true });
+    
+    return () => {
+      window.removeEventListener("mousemove", updateMousePosition);
+      if (animationFrameId.current) {
+        cancelAnimationFrame(animationFrameId.current);
+      }
+    };
+  }, [isClient, updateMousePosition]);
+
+  return { mousePosition, isClient };
+}
+
+const SpotlightOverlay = ({
+  mousePosition,
+  isVisible,
+}: {
+  mousePosition: { x: number; y: number };
+  isVisible: boolean;
+}) => {
+  if (!isVisible) return null;
+  return (
+    <div
+      className='fixed inset-0 pointer-events-none z-30 transition-opacity duration-300 hidden lg:block'
+      style={{
+        background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(141, 29, 216, 0.15), transparent 80%)`,
+      }}
+    />
+  );
+};
+
+export default function Home() {
+  const { mousePosition, isClient } = useSpotlightMouse();
+
+  // Check if spotlight should be shown (only on desktop, no reduced motion)
+  const [showSpotlight, setShowSpotlight] = useState(false);
+
+  useEffect(() => {
+    if (!isClient) return;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
+
+    setShowSpotlight(isDesktop && !prefersReducedMotion);
+  }, [isClient]);
 
   return (
     <div className='font-sans lg:flex lg:justify-between lg:gap-4'>
-      {/* Cursor spotlight overlay */}
-      <div
-        className='fixed inset-0 pointer-events-none z-30 transition-opacity duration-300'
-        style={{
-          background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(141, 29, 216, 0.15), transparent 80%)`,
-        }}
+      <SpotlightOverlay
+        mousePosition={mousePosition}
+        isVisible={showSpotlight}
       />
       <Sidebar />
-      {/* Main scrollable content */}
-      <main className='pt-20 lg:w-[55%] lg:py-12 lg:px-16'>
+      <main className='pt-20 lg:w-[55%] lg:py-12 lg:px-16 flex-1'>
         <About />
         <Experience />
         <Works />
