@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import FeaturedProjectCard from "./cards/featuredProjectCard";
+import SectionHeading from "./sectionHeading";
 
 const Works = () => {
   const projects = [
@@ -24,10 +25,8 @@ const Works = () => {
   ];
   const sectionRef = useRef<HTMLElement>(null);
   return (
-    <section ref={sectionRef} className='mb-12'>
-      <h2 className='uppercase mb-8 font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-accent after:mt-1.5'>
-        Featured Works
-      </h2>
+    <section id="works" ref={sectionRef} className='mb-12'>
+      <SectionHeading>Featured Works</SectionHeading>
       <div className="flex flex-col gap-y-8">
         {projects.map((project, index) => (
         <FeaturedProjectCard

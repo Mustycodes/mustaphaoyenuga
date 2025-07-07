@@ -4,7 +4,7 @@ const SocialLinks = () => {
   return (
     <ul className='flex items-center mt-8 space-x-6'>
       {DEFAULT_SOCIAL_LINKS.map((link) => (
-        <li>
+        <li key={link.name}>
           <a
             href={link.href}
             target='_blank'

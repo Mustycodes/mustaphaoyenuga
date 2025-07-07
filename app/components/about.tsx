@@ -1,13 +1,10 @@
+import SectionHeading from "./sectionHeading";
+
 const About = () => {
   return (
-    <section className='mb-14 md:mb-20 lg:mb-24' aria-label='about me brief'>
+    <section id="about" className='mb-14 md:mb-20 lg:mb-24' aria-label='about me brief'>
       {/*mb-4 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 */}
-      <div className="sticky top-0 z-20 w-screen -mx-6 px-6 py-5 md:-mx-12 md:px-12 bg-red-900/75 backdrop-blur">
-        <h2>About Me</h2>
-        {/* <h2 className='uppercase mb-8 text-white font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-accent after:mt-1.5'>
-          About Me
-        </h2> */}
-      </div>
+      <SectionHeading>About me</SectionHeading>
 
       <div>
         <p className='text-muted leading-relaxed mb-6'>

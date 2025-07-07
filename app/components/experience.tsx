@@ -1,9 +1,9 @@
+import SectionHeading from "./sectionHeading";
+
 const Experience = () => {
   return (
     <section className='mb-12'>
-      <h2 className='uppercase mb-8 text-white font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-accent after:mt-1.5'>
-        Experience
-      </h2>
+     <SectionHeading>Experience</SectionHeading>
       <div className='border border-border/40 rounded-2xl p-5 bg-primary'>
         <ol className='space-y-4'>
           <li className='flex gap-4'>

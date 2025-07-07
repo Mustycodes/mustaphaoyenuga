@@ -1,11 +1,10 @@
 import ArticleCard from "./cards/articleCard";
+import SectionHeading from "./sectionHeading";
 
 const Musings = () => {
   return (
-    <section>
-      <h2 className='uppercase mb-8 text-white font-semibold tracking-[0.4em] relative after:content-[""] after:absolute after:top-full after:left-0 after:w-12 after:h-0.5 after:bg-accent after:mt-1.5'>
-        Musings
-      </h2>
+    <section id="musings">
+      <SectionHeading>Musings</SectionHeading>
       <div className='space-y-4'>
         {[...Array(3)].map((article) => (
           <ArticleCard

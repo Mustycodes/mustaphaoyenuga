@@ -16,7 +16,7 @@ const ArticleCard = ({
   description,
 }: ArticleCardProps) => {
   return (
-    <article className='hover:bg-[#1f1f1f] hover:shadow-md text-slate-100 p-6 rounded-xl group cursor-pointer'>
+    <article className='lg:hover:bg-[#1f1f1f] hover:shadow-md text-slate-100 px-0 py-4 lg:p-6 rounded-xl group cursor-pointer'>
       <header className='flex flex-col'>
         <time
           dateTime={date}
@@ -29,7 +29,7 @@ const ArticleCard = ({
           {title}
         </h2>
       </header>
-      <p className='text-sm text-gray-300 mt-2'>{description}</p>
+      <p className='text-sm text-gray-300 mt-2 line-clamp-3'>{description}</p>
       {/* <footer className='mt-4'>
         <a
           href={href}
