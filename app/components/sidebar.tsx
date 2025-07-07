@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Globe, Instagram, Linkedin, Twitter } from "lucide-react";
+import SocialLinks from "./socialLinks";
+
 
 const Sidebar = () => {
   return (
@@ -9,7 +10,7 @@ const Sidebar = () => {
     >
       {/* lg:pt-24 lg:pb-12 lg:px-16 */}
       <div>
-        <div className='relative mb-4 w-20 h-20 lg:w-40 lg:h-40'>
+        <div className='hidden lg:block relative mb-4 w-20 h-20 lg:w-40 lg:h-40'>
           <Image
             src='/images/profile-image.jpeg'
             alt='Mustapha Oyenuga'
@@ -17,13 +18,18 @@ const Sidebar = () => {
             fill
           />
         </div>
-        <h1 className='text-3xl font-bold mb-2 text-slate-200'>Mustapha Oyenuga</h1>
-        <h2 className='text-lg text-slate-200 mb-6'>Front End Engineer</h2>
-        <p className='text-muted mb-8 lg:max-w-xs leading-relaxed'>
+        <h1 className='text-4xl font-bold tracking-tight text-slate-200'>
+          Mustapha Oyenuga
+        </h1>
+        {/* <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Front End Engineer</h2> */}
+        <h2 className='text-lg font-medium tracking-tight text-muted mt-2'>
+          Front End Engineer
+        </h2>
+        <p className='text-muted mt-4 max-w-xs leading-normal'>
           I build accessible, pixel-perfect digital experiences for the web.
         </p>
 
-        <nav className='space-y-4'>
+        <nav className='hidden lg:block space-y-4'>
           <NavItem name='About' href='/about' />
           <NavItem name='Musings' href='/musings' />
           <NavItem name='Works' href='/works' />
@@ -31,13 +37,7 @@ const Sidebar = () => {
       </div>
 
       {/* Social Icons */}
-      <div className='flex space-x-6'>
-        <Github className='w-6 h-6 text-slate-400 hover:text-accent cursor-pointer transition-colors duration-300' />
-        <Linkedin className='w-6 h-6 text-slate-400 hover:text-accent cursor-pointer transition-colors duration-300' />
-        <Globe className='w-6 h-6 text-slate-400 hover:text-accent cursor-pointer transition-colors duration-300' />
-        <Instagram className='w-6 h-6 text-slate-400 hover:text-accent cursor-pointer transition-colors duration-300' />
-        <Twitter className='w-6 h-6 text-slate-400 hover:text-accent cursor-pointer transition-colors duration-300' />
-      </div>
+      <SocialLinks />
     </header>
   );
 };

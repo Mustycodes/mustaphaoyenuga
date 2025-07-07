@@ -30,7 +30,7 @@ export default function Home() {
       />
       <Sidebar />
       {/* Main scrollable content */}
-      <main className='lg:w-[55%] lg:py-20 lg:px-16'>
+      <main className='pt-20 lg:w-[55%] lg:py-20 lg:px-16'>
         <About />
         <Experience />
         <Works />
