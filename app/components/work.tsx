@@ -4,7 +4,7 @@ import { useRef } from "react";
 import FeaturedProjectCard from "./cards/featuredProjectCard";
 import SectionHeading from "./sectionHeading";
 
-const Works = () => {
+const Work = () => {
   const projects = [
     {
       title: "Agency Landing Page",
@@ -25,8 +25,8 @@ const Works = () => {
   ];
   const sectionRef = useRef<HTMLElement>(null);
   return (
-    <section id="works" ref={sectionRef} className='mb-12'>
-      <SectionHeading>Featured Works</SectionHeading>
+    <section id="work" ref={sectionRef} className='mb-12'>
+      <SectionHeading>Featured Work</SectionHeading>
       <div className="flex flex-col gap-y-8">
         {projects.map((project, index) => (
         <FeaturedProjectCard
@@ -43,4 +43,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Work;

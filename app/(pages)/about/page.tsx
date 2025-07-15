@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    <section className='font-sans px-6 py-12'>
-      <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-12'>
+    <section className='py-12'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-12 space-y-12 lg:space-y-0'>
         <div className='lg:pl-20'>
           <div className='max-w-xs px-2.5 lg:max-w-sm'>
             <Image
@@ -17,7 +17,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className='lg:order-first lg:row-span-2'>
-          <h1 className='text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl'>
+          <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-zinc-100 '>
             I&apos;m Mustapha Oyenuga. I live in Lagos, Nigeria, where I design
             the future.
           </h1>

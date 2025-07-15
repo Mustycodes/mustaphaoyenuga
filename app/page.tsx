@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import About from "./components/about";
 import Experience from "./components/experience";
 import Sidebar from "./components/sidebar";
-import Works from "./components/works";
+import Work from "./components/work";
 import Musings from "./components/musings";
 
 
@@ -91,16 +91,16 @@ export default function Home() {
   }, [isClient]);
 
   return (
-    <div className='font-sans lg:flex lg:justify-between lg:gap-4'>
+    <div className='font-sans lg:flex lg:justify-between lg:gap-2'>
       <SpotlightOverlay
         mousePosition={mousePosition}
         isVisible={showSpotlight}
       />
       <Sidebar />
-      <main className='pt-20 lg:w-[55%] lg:py-12 lg:px-16 flex-1'>
+      <main className='pt-20 lg:flex-1 lg:py-12 lg:px-10'>
         <About />
         <Experience />
-        <Works />
+        <Work />
         <Musings />
       </main>
     </div>

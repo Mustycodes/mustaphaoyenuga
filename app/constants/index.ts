@@ -11,8 +11,8 @@ export const NAVIGATION_LINKS: NavigationLink[] = [
     href: "#about",
   },
   {
-    name: "Works",
-    href: "#works",
+    name: "Work",
+    href: "#work",
   },
   {
     name: "Musings",
@@ -51,5 +51,27 @@ export const DEFAULT_SOCIAL_LINKS: SocialLink[] = [
     name: "Twitter",
     href: "#",
     icon: Twitter,
+  },
+];
+
+export const PROJECTS = [
+  {
+    title: "Agency Landing Page",
+    liveUrl: "https://themesberg.com",
+    githubUrl: "https://themesberg.com",
+    description:
+      "Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups.",
+    image: "/images/project1.PNG",
+    technologies: ["WordPress", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "Mail management system",
+    liveUrl: "https://ui.glass",
+    githubUrl: "https://themesberg.com",
+    description:
+      "Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups.",
+    image: "/images/project1.PNG",
+    technologies: ["TypeScript", "Tailwind", "React", "Node.js", "HTML", "CSS"],
+    isReverse: true,
   },
 ];

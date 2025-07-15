@@ -5,7 +5,7 @@ import SidebarNav from "./sidebarNav";
 const Sidebar = () => {
   return (
     <header
-      className={`lg:sticky lg:flex lg:top-0 lg:max-h-screen lg:flex-col lg:justify-between lg:w-[45%] lg:py-20 lg:pl-16 transition-all duration-300 `}
+      className={`lg:sticky lg:flex lg:top-0 lg:max-h-screen lg:flex-col lg:justify-between lg:w-[40%] lg:py-20 lg:pl-6 transition-all duration-300 `}
     >
       <div>
         <div className='hidden lg:block relative mb-4 w-20 h-20 lg:w-40 lg:h-40'>
@@ -21,11 +21,11 @@ const Sidebar = () => {
             Mustapha Oyenuga
           </h1>
 
-          <h2 className='text-lg md:text-xl font-medium tracking-tight text-muted mt-2'>
-            Front End Engineer
+          <h2 className='text-lg md:text-lg font-medium tracking-tight text-muted mt-2'>
+            Front-End Engineer | Entrepreneur
           </h2>
           <p className='text-muted mt-4 max-w-xs leading-normal'>
-            I build accessible, pixel-perfect digital experiences for the web.
+            I build, teach and create exciting stuff — one line of code at a time. 🚀
           </p>
         </div>
 
